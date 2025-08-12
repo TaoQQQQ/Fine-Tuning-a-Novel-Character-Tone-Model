@@ -47,9 +47,9 @@ if __name__ == "__main__":
         base_url = ""
     )
     # 假设的文件路径，请替换为您的实际文件路径
-    file_path = ""
+    file_path = "./txt"
     # 输出文件的名称
-    output_file = ""
+    output_file = "./txt"
     
     # 从文件加载段落
     questions = load_segments_from_file(file_path)
