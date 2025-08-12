@@ -49,7 +49,7 @@ if __name__ == "__main__":
     # 假设的文件路径，请替换为您的实际文件路径
     file_path = "./split.content.txt"
     # 输出文件的名称
-    output_file = "./diague.txt"
+    output_file = "./train.txt"
     
     # 从文件加载段落
     questions = load_segments_from_file(file_path)
