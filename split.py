@@ -80,8 +80,8 @@ def split_context(characters, content):
 
 if __name__ == "__main__":
 
-    file_path = "./txt"  # 替换为实际文件路径
-    out_path = "./txt" # 替换为实际文件路径
+    file_path = "./xxx.txt"  # 替换为实际文件路径
+    out_path = "./split_content.txt" # 替换为实际文件路径
     # 找需要提取的角色名，格式如下"官方名字":["别名","常见含错别字的名字"]，如
     # characters = {
     #     "萧薰儿": ["熏儿", "薰儿"],
@@ -96,6 +96,7 @@ if __name__ == "__main__":
     with open(out_path, 'w', encoding='utf-8') as file:
         for paragraph in paragraphs:
             file.write(paragraph + '\n\n')
+
 
 
 
