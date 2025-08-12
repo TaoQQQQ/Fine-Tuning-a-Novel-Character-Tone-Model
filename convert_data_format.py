@@ -19,7 +19,7 @@ def convert_format(content_list):
 
 if __name__ == "__main__":
     # 定义文件路径
-    file_path = './dialogue'
+    file_path = './train.txt'
     # 输出目录
     output_file_path = './train.json'
 
@@ -31,3 +31,4 @@ if __name__ == "__main__":
     with open(output_file_path, 'w', encoding='utf-8') as file:
 
         json.dump(data_json, file, ensure_ascii=False, indent=4)
+
