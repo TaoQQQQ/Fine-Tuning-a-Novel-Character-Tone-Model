@@ -19,9 +19,9 @@ def convert_format(content_list):
 
 if __name__ == "__main__":
     # 定义文件路径
-    file_path = ''
+    file_path = './dialogue'
     # 输出目录
-    output_file_path = ''
+    output_file_path = './train.json'
 
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.readlines()
@@ -29,4 +29,5 @@ if __name__ == "__main__":
     data_json = convert_format(content)
 
     with open(output_file_path, 'w', encoding='utf-8') as file:
+
         json.dump(data_json, file, ensure_ascii=False, indent=4)
