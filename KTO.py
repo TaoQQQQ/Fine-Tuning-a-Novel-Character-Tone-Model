@@ -17,9 +17,9 @@ def transform(content):
 
 if __name__ == "__main__":
     # 定义文件路径
-    file_path = 'C:\\Users\\11050\\Desktop\\虚假的人工智能\\赛博萧炎\\文档\\kto.txt'
+    file_path = 'kto.txt'
     # 输出目录
-    output_file_path = 'C:\\Users\\11050\\Desktop\\虚假的人工智能\\赛博萧炎\\文档\\kto.json'
+    output_file_path = 'kto.json'
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.readlines()
 
@@ -27,4 +27,5 @@ if __name__ == "__main__":
 
     with open(output_file_path, 'w', encoding='utf-8') as json_file:
         json.dump(content, json_file, ensure_ascii=False, indent=4)
+
 
